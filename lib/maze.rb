@@ -31,7 +31,7 @@ class Maze
       if @direction == "E"
         6
       elsif @direction == "S"
-        "You successfuly finished your journey through the maze"
+        "success"
       elsif @direction == "W"
         3
       end
