@@ -7,49 +7,37 @@ class Maze
   def check_move
     if (@room == 1)
       if @direction == "W"
-        "You are in room 2"
+        2
       elsif @direction == "N"
-        "You are in room 3"
-      else
-        "This direction is not available"
+        3
       end
     elsif (@room == 2)
       if @direction == "E"
-        "You are in room 1"
-      else
-        "This direction is not available"
+        1
       end
     elsif (@room == 3)
       if @direction == "E"
-        "You are in room 5"
+        5
       elsif @direction == "N"
-        "You are in room 4"
+        4
       elsif @direction == "S"
-        "You are in room 1"
-      else
-        "This direction is not available"
+        1
       end
     elsif (@room == 4)
       if @direction == "S"
-        "You are in room 3"
-      else
-        "This direction is not available"
+        3
       end
     elsif (@room == 5)
       if @direction == "E"
-        "You are in room 6"
+        6
       elsif @direction == "S"
         "You successfuly finished your journey through the maze"
       elsif @direction == "W"
-        "You are in room 3"
-      else
-        "This direction is not available"
+        3
       end
     elsif (@room == 6)
       if @direction == "W"
-        "You are in room 5"
-      else
-        "This direction is not available"
+        5
       end
     end
   end
